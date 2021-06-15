@@ -2,5 +2,11 @@ module.exports = {
     siteMetadata: {
         title: 'drupal-test',
     },
-    plugins: ['gatsby-plugin-gatsby-cloud'],
+    plugins: ['gatsby-plugin-gatsby-cloud',
+        {
+            resolve: `gatsby-source-drupal`,
+            options: {
+                baseUrl: `https://stm60c8fdfd83f6a-cpa912vkrx0prwxitiqqvetvl7no6stm.tugboat.qa/`
+            }
+        }],
 }

@@ -1,3 +1,9 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
+
+console.log({ VAR: process.env.MAX_LENGTH, LENGTH: process.env.MAX_LENGTH.length });
+
 module.exports = {
     siteMetadata: {
         title: 'drupal-test',
